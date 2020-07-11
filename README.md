@@ -1,7 +1,7 @@
 # FateGoMachine
 Robot that plays Fate Go for you!
  
-# Desired Features
+## Desired Features
 * Easy to use UI.
 * Recognize cards with command codes, skills, mystic codes, apples, buttons, menus.
 * Using cards with command codes, skills, mystic codes, apples, buttons.
@@ -14,19 +14,19 @@ Robot that plays Fate Go for you!
 * Roll lottery events.
 * Wifi capabilities for remote updates.
  
-# Hardware
+## Hardware
 * Raspberry Pi (Zero or 4)
 * Webcam
 * Stepper Motors w/ Driving IC
 * 3D printed gears, rails, frames, etc.
  
-# Timeline
+## Timeline
 * Computer Vision
 * Moving arm
 * UI
 * Machine Learning
  
-# Tasks
+## Tasks
 Bill
 * OpenCV (Card recognition from screenshot, then skills, then mystic code)
 
