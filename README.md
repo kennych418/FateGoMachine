@@ -29,6 +29,7 @@ Robot that plays Fate Go for you!
 # Tasks
 Bill
 * OpenCV (Card recognition from screenshot, then skills, then mystic code)
+
 Kenny
 * OpenCV (Getting it to work with webcam) 
 * Learn how to use stepper motors + drivers
