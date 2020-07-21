@@ -1,9 +1,11 @@
 #Funtions to control 28BYJ-48 stepper motor with ULN2003AN driver board 
 import RPi.GPIO as GPIO 
-int STEPPER_PIN_1 = 32
-int STEPPER_PIN_2 = 36
-int STEPPER_PIN_3 = 38
-int STEPPER_PIN_4 = 40
+from time import sleep
+
+STEPPER_PIN_1 = 32
+STEPPER_PIN_2 = 36
+STEPPER_PIN_3 = 38
+STEPPER_PIN_4 = 40
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(STEPPER_PIN_1, GPIO.OUT)
@@ -11,9 +13,9 @@ GPIO.setup(STEPPER_PIN_2, GPIO.OUT)
 GPIO.setup(STEPPER_PIN_3, GPIO.OUT)
 GPIO.setup(STEPPER_PIN_4, GPIO.OUT)
 
-int step_number = 0
+step_number = 0
 
-def OneStep(bool dir):
+def OneStep(dir):
     global step_number
     
     if(dir) and (step_number == 0):
@@ -60,8 +62,8 @@ def OneStep(bool dir):
     step_number = step_number + 1
     if(step_number > 3):
         step_number = 0
-}
 
 if __name__ == "__main__":
-    OneStep(false)
-    delay(2)
+    while(1):
+        OneStep(0)
+        sleep(0.002)
